@@ -20,7 +20,7 @@ class MaterialTests(unittest.TestCase):
                 self.assertTrue(all(None not in row for row in rows))
 
 
-EXPECTED = {'arrival_requests.csv': (['request_id', 'driver_key', 'region', 'arrived_at', 'vehicle_type', 'display_set_id', 'model_version'], 45), 'displayed_options.csv': (['display_set_id', 'parking_id', 'rank', 'walk_minutes', 'price_band', 'available_at_display', 'listing_version'], 135), 'parking_inventory.csv': (['parking_id', 'observed_at', 'capacity', 'occupied', 'closure_state', 'source'], 71), 'parking_outcomes.csv': (['request_id', 'parked_at', 'feedback', 'feedback_state', 'source_version'], 45)}
+EXPECTED = {'vehicles.csv': (['vehicle_id', 'model', 'hardware', 'region', 'camera_config'], 35), 'rack_installations.csv': (['installation_id', 'vehicle_id', 'rack_model', 'mount_position', 'load_state', 'valid_from', 'valid_to', 'review_state'], 47), 'drive_events.csv': (['trip_id', 'vehicle_id', 'version', 'started_at', 'rear_visibility', 'upload_state', 'intervention_id'], 60), 'rear_observations.csv': (['observation_id', 'trip_id', 'target_class', 'camera', 'review_state', 'detected', 'review_batch'], 41), 'trial_scopes.csv': (['scope_id', 'model', 'hardware', 'rack_model', 'region', 'status', 'vehicle_count', 'source_version'], 18)}
 
 
 if __name__ == "__main__":
