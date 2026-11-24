@@ -5,9 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "bicycle_rack_visibility_scope"
 version = "0.1.0"
-description = "本地合成车辆运营资料"
+description = "自行车架遮挡条件下的辅助驾驶适用性评估（本地合成资料）"
 requires-python = ">=3.11,<3.15"
 dependencies = []
+
+[project.scripts]
+bicycle-rack-scope = "bicycle_rack_visibility_scope.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
